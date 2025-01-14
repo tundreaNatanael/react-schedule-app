@@ -7,6 +7,8 @@ export const useMyUser = () => {
 		role: "admin",
 		nickname: "johnd",
 		emoji: "👨‍💻",
+		perWeekHours: 13,
+		hoursConsumed: 12,
 	};
 };
 
@@ -20,7 +22,8 @@ export const useUsers = () => {
 			role: "user",
 			nickname: "janes",
 			emoji: "👩‍💻",
-			perWeekHours: 35,
+			perWeekHours: 6,
+			hoursConsumed: 20,
 		},
 		{
 			id: 2,
@@ -31,6 +34,7 @@ export const useUsers = () => {
 			nickname: "alicej",
 			emoji: "👩‍💼",
 			perWeekHours: 30,
+			hoursConsumed: 15,
 		},
 		{
 			id: 3,
@@ -41,6 +45,7 @@ export const useUsers = () => {
 			nickname: "bobb",
 			emoji: "👨‍💼",
 			perWeekHours: 40,
+			hoursConsumed: 25,
 		},
 		{
 			id: 4,
@@ -51,6 +56,7 @@ export const useUsers = () => {
 			nickname: "charlied",
 			emoji: "👨‍🔧",
 			perWeekHours: 25,
+			hoursConsumed: 10,
 		},
 		{
 			id: 5,
@@ -61,6 +67,7 @@ export const useUsers = () => {
 			nickname: "davidw",
 			emoji: "👨‍🏫",
 			perWeekHours: 20,
+			hoursConsumed: 5,
 		},
 		{
 			id: 6,
@@ -71,6 +78,7 @@ export const useUsers = () => {
 			nickname: "evem",
 			emoji: "👩‍🔬",
 			perWeekHours: 30,
+			hoursConsumed: 18,
 		},
 		{
 			id: 7,
@@ -81,6 +89,7 @@ export const useUsers = () => {
 			nickname: "frankm",
 			emoji: "👨‍🎨",
 			perWeekHours: 35,
+			hoursConsumed: 22,
 		},
 		{
 			id: 8,
@@ -91,6 +100,7 @@ export const useUsers = () => {
 			nickname: "gracet",
 			emoji: "👩‍🎤",
 			perWeekHours: 40,
+			hoursConsumed: 30,
 		},
 		{
 			id: 9,
@@ -101,6 +111,7 @@ export const useUsers = () => {
 			nickname: "hanka",
 			emoji: "👨‍🚀",
 			perWeekHours: 25,
+			hoursConsumed: 12,
 		},
 		{
 			id: 10,
@@ -111,6 +122,7 @@ export const useUsers = () => {
 			nickname: "ivyt",
 			emoji: "👩‍🚀",
 			perWeekHours: 20,
+			hoursConsumed: 8,
 		},
 	];
 };
