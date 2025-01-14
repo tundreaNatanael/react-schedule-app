@@ -1,7 +1,6 @@
 import React from "react";
 
 const User = ({user}) => {
-	console.log(user);
 	return (
 		<div className="mt-4 p-4">
 			<p className="text-xl font-semibold">{`${user.firstname} ${user.lastname}`}</p>
