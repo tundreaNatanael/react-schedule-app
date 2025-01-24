@@ -74,6 +74,7 @@ const UserSettings = user => {
 							/>
 						</div>
 						<ErrorMessage name="perWeekHours" component="div" className="text-red-400" />
+						<hr className="my-4" />
 						<div className="flex justify-end">
 							<Button type="submit" label="Save" className="bg-amber-600 text-white" />
 						</div>
