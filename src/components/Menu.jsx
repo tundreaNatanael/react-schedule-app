@@ -11,7 +11,7 @@ const Menu = () => {
 	const isActive = path => location.pathname === path;
 
 	return (
-		<div className="flex justify-between px-4 py-4 gap-4 max-w-[500px] md:gap-6">
+		<div className="flex flex-col px-4 py-4 gap-4 max-w-[500px] md:gap-6">
 			<div className="flex flex-col items-center">
 				<Button
 					icon="calendar"
@@ -20,6 +20,7 @@ const Menu = () => {
 					onClick={() => navigate("/home")}
 				/>
 				{isActive("/home") && <div className="w-full h-1 bg-gray-400 mt-1"></div>}
+				<div className="hidden md:block mt-2 text-center">Home</div>
 			</div>
 			{me.role === "admin" && (
 				<div className="flex flex-col items-center">
@@ -30,6 +31,7 @@ const Menu = () => {
 						onClick={() => navigate("/manage-users")}
 					/>
 					{isActive("/manage-users") && <div className="w-full h-1 bg-gray-400 mt-1"></div>}
+					<div className="hidden md:block mt-2 text-center">Manage Users</div>
 				</div>
 			)}
 			<div className="flex flex-col items-center">
@@ -40,6 +42,7 @@ const Menu = () => {
 					onClick={() => navigate("/settings")}
 				/>
 				{isActive("/settings") && <div className="w-full h-1 bg-gray-400 mt-1"></div>}
+				<div className="hidden md:block mt-2 text-center">Settings</div>
 			</div>
 		</div>
 	);

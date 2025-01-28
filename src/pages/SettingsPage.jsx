@@ -1,7 +1,6 @@
 import React from "react";
 import {Formik, Form, Field, ErrorMessage} from "formik";
 import * as Yup from "yup";
-import Menu from "../components/Menu";
 import Button from "../components/Button";
 import {useMyUser, usePlatformData} from "../data/data";
 
@@ -36,8 +35,7 @@ const SettingsPage = () => {
 	};
 
 	return (
-		<div className="bg-gray-100 w-full min-h-screen space-y-4 flex flex-col items-center">
-			<Menu />
+		<div className="bg-gray-100 w-full min-h-screen space-y-4 flex flex-col items-center p-6">
 			<Formik
 				initialValues={initialValues}
 				onSubmit={values => {
