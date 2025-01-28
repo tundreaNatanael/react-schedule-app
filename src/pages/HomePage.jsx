@@ -2,7 +2,6 @@ import React from "react";
 import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
 import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
 import {StaticDatePicker} from "@mui/x-date-pickers/StaticDatePicker";
-import Menu from "../components/Menu";
 import Button from "../components/Button";
 import Icon from "../components/Icon";
 import {useMyUser} from "../data/data";
@@ -10,8 +9,7 @@ import {useMyUser} from "../data/data";
 const HomePage = () => {
 	const me = useMyUser();
 	return (
-		<div className="bg-gray-100 w-full min-h-screen space-y-4 flex flex-col items-center">
-			<Menu />
+		<div className="bg-gray-100 w-full min-h-screen space-y-4 flex flex-col items-center p-6">
 			<div className="text-center p-4">
 				<h1 className="text-3xl font-bold">Welcome to the Schedule App</h1>
 				<p className="text-lg text-gray-600">Manage your weekly hours and schedule bookings efficiently.</p>

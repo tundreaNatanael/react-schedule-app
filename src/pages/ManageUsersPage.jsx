@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Menu from "../components/Menu";
 import {useUsers} from "../data/data";
 import UserSettings from "../components/UserSettings";
 
@@ -13,9 +12,7 @@ const ManageUsersPage = () => {
 	);
 
 	return (
-		<div className="bg-gray-100 w-full min-h-screen space-y-6 flex flex-col items-center">
-			<Menu />
-
+		<div className="bg-gray-100 w-full min-h-screen space-y-6 flex flex-col items-center pt-6 px-4">
 			<div className="w-full max-w-3xl px-4">
 				<input
 					type="text"
